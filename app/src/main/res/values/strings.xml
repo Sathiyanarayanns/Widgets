@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Widgets</string>
+    <string name="yes">toggle</string>
+    <string-array name="degree">
+        <item>BE</item>
+        <item>BTECH</item>
+        <item>BSC</item>
+        <item>DIP</item>
+        <item>ITI   </item>
+    </string-array>
+</resources>

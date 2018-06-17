@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.example.srirama.widgets.BasicWidget">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="367dp"
+        android:layout_height="93dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+
+        <TextView
+            android:id="@+id/tvbasicname"
+            android:layout_width="79dp"
+            android:layout_height="43dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="name"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/etusername"
+            android:layout_width="255dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:text="type here"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <RadioGroup
+        android:id="@+id/rgbasic"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="58dp" >
+
+        <RadioButton
+            android:id="@+id/rbbasicmale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="basicgender"
+            android:text="male" />
+
+        <RadioButton
+            android:id="@+id/rbbasicfemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.02"
+            android:onClick="basicgender"
+            android:text="female" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/etbasicemail"
+        android:layout_width="313dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginLeft="10dp"
+        android:inputType="textEmailAddress"
+        android:text="enter mail" />
+
+    <EditText
+        android:id="@+id/etbasicphno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        android:layout_marginLeft="10dp"
+        android:text="enter phone number" />
+
+    <Spinner
+        android:id="@+id/spindegree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.08"
+        android:entries="@array/degree"/>
+
+    <CheckBox
+        android:id="@+id/cbbasicece"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:text="ECE" />
+
+    <CheckBox
+        android:id="@+id/cb_basic_cse"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:text="CSE" />
+
+    <CheckBox
+        android:id="@+id/cb_basic_it"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:text="IT" />
+
+    <CheckBox
+        android:id="@+id/cb_basic_mech"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:text="MECH" />
+
+    <ListView
+        android:id="@+id/lvbasiccourse"
+        android:layout_width="341dp"
+        android:layout_height="260dp" />
+
+    <ToggleButton
+        android:id="@+id/tb_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ToggleButton" />
+
+    <Switch
+        android:id="@+id/switch_basic"
+        android:layout_width="match_parent"
+        android:layout_height="11dp"
+        android:text="Switch" />
+
+    <Button
+        android:id="@+id/btn_basic_nextpage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nextpage" />
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>
